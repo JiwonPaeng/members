@@ -1,8 +1,8 @@
-const NUMBER_OF_MEMBERS = 3;
+const NUMBER_OF_MEMBERS = 4;
 
-const ARRAY_PREFIX = ["입대까지", "전역까지", "휴가까지"]
-const ARRAY_NAMES = ["팽지원", "허채민", "허채민"];
-const ARRAY_DATES = ["Mar 20, 2023 14:00:00", "Apr 3, 2024 00:00:00", "Feb 16, 2023 00:00:00"];
+const ARRAY_PREFIX = ["입대까지", "전역까지", "전역까지", "휴가까지"]
+const ARRAY_NAMES = ["팽지원", "허채민", "예지민", "허채민"];
+const ARRAY_DATES = ["Mar 20, 2023 14:00:00", "Apr 3, 2024 00:00:00", "Jul 29, 2024 00:00:00", "Feb 16, 2023 00:00:00"];
 
 document.body.onload = main;
 function main()
