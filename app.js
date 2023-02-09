@@ -1,9 +1,8 @@
-const NUMBER_OF_MEMBERS = 2;
+const NUMBER_OF_MEMBERS = 3;
 
-const ARRAY_PREFIX_TYPE = ["입대까지", "전역까지"]
-const ARRAY_NAMES = ["팽지원", "허채민"];
-const ARRAY_PREFIX = [0, 1];
-const ARRAY_DATES = ["Mar 20, 2023 14:00:00", "Apr 3, 2024 00:00:00"];
+const ARRAY_PREFIX = ["입대까지", "전역까지", "휴가까지"]
+const ARRAY_NAMES = ["팽지원", "허채민", "허채민"];
+const ARRAY_DATES = ["Mar 20, 2023 14:00:00", "Apr 3, 2024 00:00:00", "Feb 16, 2023 00:00:00"];
 
 document.body.onload = main;
 function main()
@@ -54,7 +53,7 @@ function addElement(number)
         if (miliseconds < 10) miliseconds = "0" + miliseconds;
         
         let timerContent = days + "일 " + hours + "시간 " + minutes + "분 " + seconds + "." + miliseconds + "초";
-        timerContent = ARRAY_NAMES[number] + " : " + ARRAY_PREFIX_TYPE[ARRAY_PREFIX[number]] + " " + timerContent;
+        timerContent = ARRAY_NAMES[number] + " : " + ARRAY_PREFIX[number] + " " + timerContent;
         document.getElementById("timeDisplayer" + number).innerHTML = timerContent;
         
         if (distance < 0)
