@@ -101,10 +101,18 @@ function myRenderFunction() {
 */
 
 function renderTimerGame() {
+    
+    // wrapper 추가
+    const wrapperElement = document.createElement("div");
+    wrapperElement.setAttribute("class", "wrapper");
+    wrapperElement.setAttribute("id", "wrapper");
+    document.getElementById("screen").insertBefore(wrapperElement, null);
+
+    // h1추가
     const tempElement = document.createElement("h1");
     const tempElementContent = document.createTextNode("work in progress");
     tempElement.appendChild(tempElementContent);
-    document.getElementById("screen").insertBefore(tempElement, null);
+    document.getElementById("wrapper").insertBefore(tempElement, null);
 }
 
 
