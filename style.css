@@ -1,13 +1,13 @@
 body {
     /* background-color : red; */
-    text-align: center;
+    text-align : center;
     
-    background-image: url('background.png');
+    background-image : url('background.png');
     /* background-repeat: no-repeat; */
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
-    margin:0;
-    padding:0;
+    margin : 0;
+    padding : 0;
 }
 
 h1 {
@@ -26,12 +26,6 @@ nav {
     margin-bottom: 0;
     gap: 1em;
 }
-
-/* button {
-    border:none;
-    border-right:solid;
-    background-color:gray;
-} */
 
 .wrapper {
     /* background-color: beige; */

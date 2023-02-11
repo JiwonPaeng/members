@@ -65,6 +65,7 @@ function addElement(number)
 function onButtonClick(buttonContent) {
     if (buttonContent == "타이머") PAGE_YOURE_LOOKING_AT = 0;
     else if (buttonContent == "당신이 지금 당장 백준을 해야하는 이유") PAGE_YOURE_LOOKING_AT = 1;
+    else if (buttonContent == "순발력 게임") PAGE_YOURE_LOOKING_AT = 2;
     myRenderFunction();
 }
 
@@ -88,6 +89,22 @@ function myRenderFunction() {
 
     if (PAGE_YOURE_LOOKING_AT == 0) renderTimer();
     else if (PAGE_YOURE_LOOKING_AT == 1) renderBOJ();
+    else if (PAGE_YOURE_LOOKING_AT == 2) renderTimerGame();
+}
+
+/*
+<div class = "wrapper" id="gameWrapper">
+    <h2 id="timerDisplayer"><h2>
+    <button>시작하기</button>
+    <button>정지!</button>
+</div>
+*/
+
+function renderTimerGame() {
+    const tempElement = document.createElement("h1");
+    const tempElementContent = document.createTextNode("work in progress");
+    tempElement.appendChild(tempElementContent);
+    document.getElementById("screen").insertBefore(tempElement, null);
 }
 
 
