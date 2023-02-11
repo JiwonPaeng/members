@@ -1,8 +1,57 @@
 body {
-    background-color : beige;
+    /* background-color : red; */
     text-align: center;
+    
+    background-image: url('background.png');
+    /* background-repeat: no-repeat; */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    margin:0;
+    padding:0;
 }
 
 h1 {
     text-align: center;
+    margin:0;
+}
+
+#navwrapper {
+    background-color:gray;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    gap: 1em;
+}
+
+/* button {
+    border:none;
+    border-right:solid;
+    background-color:gray;
+} */
+
+.wrapper {
+    /* background-color: beige; */
+    background: rgba(200, 200, 200, 0.90);
+    /* filter: blur(8px);
+    -webkit-filter:blur(8px); */
+    margin-left: 35%;
+    margin-right: 35%;
+    /* margin-bottom: 2%; */
+    border-radius: 5%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
+#footer {
+    background-color: black;
 }
