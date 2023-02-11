@@ -38,10 +38,11 @@ nav {
     background: rgba(200, 200, 200, 0.90);
     /* filter: blur(8px);
     -webkit-filter:blur(8px); */
-    margin-left: 35%;
-    margin-right: 35%;
+    /* margin-left: 35%;
+    margin-right: 35%; */
     /* margin-bottom: 2%; */
-    border-radius: 5%;
+    display:inline-block;
+    margin:10px;
 }
 
 .footer {
