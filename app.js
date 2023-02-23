@@ -1,8 +1,8 @@
-const NUMBER_OF_MEMBERS = 6;
+const NUMBER_OF_MEMBERS = 9;
 
-const ARRAY_PREFIX = ["복귀까지", "입대까지", "입대까지", "입대까지", "전역까지", "전역까지"]
-const ARRAY_NAMES = ["허채민", "팽지원", "심우재", "이승우", "허채민", "예지민"];
-const ARRAY_DATES = ["Feb 24, 2023 20:00:00", "Mar 20, 2023 14:00:00", "Apr 3, 2023 14:00:00", "Apr 24, 2023 14:00:00", "Apr 3, 2024 00:00:00", "Jul 29, 2024 00:00:00"];
+const ARRAY_PREFIX = ["복귀까지", "입대까지", "입대까지", "입대까지", "전역까지", "전역까지", "전역까지", "전역까지", "전역까지"]
+const ARRAY_NAMES = ["허채민", "팽지원", "심우재", "이승우", "허채민", "예지민", "팽지원", "심우재", "이승우"];
+const ARRAY_DATES = ["Feb 24, 2023 20:00:00", "Mar 20, 2023 14:00:00", "Apr 3, 2023 14:00:00", "Apr 24, 2023 14:00:00", "Apr 3, 2024 00:00:00", "Jul 30, 2024 00:00:00", "Sep 20, 2024 00:00:00", "Oct 3, 2024 00:00:00", "Jan 24, 2025 00:00:00"];
 
 let PAGE_YOURE_LOOKING_AT = 0;
 
@@ -130,7 +130,7 @@ function renderTimer() {
     
     // h3 추가
     const h3Element = document.createElement("h3");
-    const h3ElementContent = document.createTextNode("나도 추가됐으면 좋겠다 -> 연락주세요~");
+    const h3ElementContent = document.createTextNode("나도 추가됐으면 좋겠다 or 오류 -> 연락주세요~");
     h3Element.appendChild(h3ElementContent);
     document.getElementById("wrapper").insertBefore(h3Element, null);
     
